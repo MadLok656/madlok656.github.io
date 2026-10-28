@@ -1,0 +1,21 @@
+body {
+    background-color: #000030;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-list {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-element {
+    border: 2px #7e00ec solid;
+    min-height: 50px;
+    flex: 1;
+    margin: 10px;
+}
