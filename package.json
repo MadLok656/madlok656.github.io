@@ -15,7 +15,8 @@
   "type": "module",
   "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "npx tsc --noEmit",
+    "start": "node dist/app",
     "dev": "nodemon dist/app",
     "build": "npx tsc -p tsconfig.json"
   },

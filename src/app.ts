@@ -7,12 +7,12 @@ import { fileURLToPath } from "node:url";
 import path from 'node:path';
 
 const __filename: string = fileURLToPath(import.meta.url);
-const __dirname: string = path.join( path.dirname(__filename), "/.." );
+const __dirname: string = path.join( path.dirname(__filename), '/..' );
 
 const app = express();
 app.set('view engine', 'html');
 app.engine('html', ejs.renderFile);
-app.use(express.static(__dirname + "/public"))
+app.use(express.static(__dirname + '/public'))
 
 
 app.get("/", (request, response) => {
